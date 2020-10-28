@@ -3,8 +3,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
-import Avatar from '@material-ui/core/Avatar'
-import logo from '../../images/logo.png';
+import logo from '../../logo.png';
 import styles from './styles.css';
 
 export default class Header extends Component {
@@ -20,16 +19,12 @@ export default class Header extends Component {
                     />
                 </div>
                 <div className="header__input">
-                    <input type="text"/>
+                    <input placeholder="Search..." type="text"/>
                     <SearchIcon className="header__inputButton"/>
                 </div>
                     <div className="header__icons">
-                    <VideoCallIcon />
-                    <NotificationsIcon />
-                    <Avatar
-                        alt="user"
-                        src=""
-                    />
+                    <VideoCallIcon className="header__icon"/>
+                    <NotificationsIcon className="header__icon"/>
                 </div>
             </div>
         );
