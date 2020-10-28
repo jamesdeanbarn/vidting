@@ -11,20 +11,26 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
-                <MenuIcon />
-                <img
-                    className="header__logo"
-                    src={logo}
-                    alt="ST Logo"
-                />
-                <input type="text"/>
-                <SearchIcon />
-                <VideoCallIcon />
-                <NotificationsIcon />
-                <Avatar
-                    alt="user"
-                    src=""
-                />
+                <div className="header__left">
+                    <MenuIcon />
+                    <img
+                        className="header__logo"
+                        src={logo}
+                        alt="ST Logo"
+                    />
+                </div>
+                <div className="header__input">
+                    <input type="text"/>
+                    <SearchIcon />
+                </div>
+                    <div className="header__icons">
+                    <VideoCallIcon />
+                    <NotificationsIcon />
+                    <Avatar
+                        alt="user"
+                        src=""
+                    />
+                </div>
             </div>
         );
     }
