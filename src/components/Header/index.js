@@ -21,7 +21,7 @@ export default class Header extends Component {
                 </div>
                 <div className="header__input">
                     <input type="text"/>
-                    <SearchIcon />
+                    <SearchIcon className="header__inputButton"/>
                 </div>
                     <div className="header__icons">
                     <VideoCallIcon />
